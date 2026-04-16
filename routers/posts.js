@@ -68,10 +68,14 @@ router.post("/", (req, res) => {
 });
 
 // UPDATE → sostituisce tutto
-router.put("/:id", (req, res) => {});
+router.put("/:id", (req, res) => {
+  res.send('sostituisci un post')
+});
 
 // PATCH → modifica parziale
-router.patch("/:id", (req, res) => {});
+router.patch("/:id", (req, res) => {
+  res.send('hai modificato un post')
+});
 
 // DESTROY → elimina
 router.delete("/:id", (req, res) => {
