@@ -66,6 +66,14 @@ router.patch('/:id', (req, res) => {
 
 // DESTROY → elimina
 router.delete('/:id', (req, res) => {
+  const id = req.params.id
+  const index = postBlog.findIndex(post => post.id === id)
+  if( index === -1) {
+    res.send('post non trovato')
+  }
+
+  postBlog.splice(index, 1)
+  res.json(postBlog)
 
 });
 
