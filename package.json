@@ -1,0 +1,16 @@
+{
+  "name": "express-blog-routing",
+  "version": "1.0.0",
+  "description": "esercizio routing express",
+  "license": "ISC",
+  "author": "nicolò salvestrini",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "node --watch index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
